@@ -1,0 +1,65 @@
+Material de Apoio:
+mongoimport --db t_todo -c tasks --type csv --file tasks.csv --headerline
+
+Iniciar 
+mongo
+
+Fechar 
+ctrl+C
+
+show dbs
+
+use t_todo
+
+show collections
+
+db.tasks.count()
+
+CRUD 	Sql Server
+Create 	Insert
+Read	Select
+Update	Update
+Delete  Delete
+
+=====================================================================================================
+
+db.tasks.find({titulo: { $in : ["Titulo A", "Titulo B]}}).pretty()
+
+db.tasks.find({"titulo" : "Titulo A"  }).pretty()
+
+db.tasks.find({titulo: "Titulo D", descricao: "react" }).pretty()
+
+db.tasks.find({$or : [{titulo: "Titulo B"}, {titulo: "Titulo C"}]}).pretty()
+
+db.tasks.find({$or: [{titulo: "Titulo B"},{titulo: "Titulo C"}, {descricao: "javascript"}]}).pretty()
+
+db.tasks.find({ descricao: {"mongodb", "css", "jquery"] }}).pretty()
+
+db.tasks.find({$or : [{titulo: "Titulo A"}, {descricao: {$in: ["es6", "bootstrap"]}}]).pretty()
+
+=====================================================================================================
+
+1. db.tasks.find({ descricao: /js/  }).pretty() *certo*
+2. db.tasks.find({ descricao: /t$/  }).pretty() *certo*
+3. db.tasks.find({ descricao: /l$/  }).pretty() *certo*
+4. db.tasks.find({ descricao: /t$|l$/   }).pretty()
+5. db.tasks.find({ descricao: /^b/  }).pretty() *certo*
+6. db.tasks.find({ descricao: /^r$or^h/  }).pretty()
+
+db.tasks.find({$or : [{titulo: "Titulo B"}, {titulo: "Titulo C"}]}).pretty()
+
+db.tasks.find({ descricao: /E/i  }).pretty() IGNORA LETRAS MAIUSCULAS OU MINUSCULAS
+
+db.tasks.find().sort({ _id: 1 *crescente* }).pretty()
+
+db.tasks.find().sort({ _id: -1 *decrescente* }).pretty()
+
+*.limit() limita o número de colunas*
+
+======================================================================================================
+Ordene pela data de inclusão. *certo*
+db.tasks.find().sort({ dataInclusao: 01 })
+==========================================
+Ordene pelas descrições.
+db.tasks.find().sort({ descricao: 1 }).pretty()
+==========================================
