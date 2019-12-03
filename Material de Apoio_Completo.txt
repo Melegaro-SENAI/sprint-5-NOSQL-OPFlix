@@ -15,11 +15,11 @@ show collections
 
 db.tasks.count()
 
-CRUD 	Sql Server
-Create 	Insert
-Read	Select
-Update	Update
-Delete  Delete
+CRUD 	Sql Server  MongoDB
+Create 	Insert	    Insert  
+Read	Select      Find
+Update	Update      Update
+Delete  Delete      Delete
 
 =====================================================================================================
 
@@ -62,4 +62,9 @@ db.tasks.find().sort({ dataInclusao: 01 })
 ==========================================
 Ordene pelas descrições.
 db.tasks.find().sort({ descricao: 1 }).pretty()
-==========================================
+==================================================================================================
+
+db.tasks.insertMany([{titulo: "Titulo U", descricao: "Csharp", concluida: "true"},{titulo: "Titulo P", descricao: "Firebase", dataInclusao: new Date()}])
+==========================================================================================================================================================
+db.tasks.update({_id:  ObjectId("5de697d788a87d5685ac7b50")},{$set : "Titulo" : "Titulo Uava", "descricao": "Java best"})
+
