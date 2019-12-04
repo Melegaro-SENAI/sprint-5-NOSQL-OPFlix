@@ -1,0 +1,3 @@
+> use t_gufos
+switched to db t_gufos
+db.createCollection("mapas")

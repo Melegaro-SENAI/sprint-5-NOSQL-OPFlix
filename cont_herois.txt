@@ -15,7 +15,6 @@ a 3 ou a quantidade de cachorros seja igual a 6.
 9.	Selecione todos os registros em que o nome contenha s.
 10.	Selecione todos os registros em que o nome contenha ‘e’ ou ‘o’.
 11.	Insira 3 novos super-heróis.
-parei na 11
 12.	Delete 1 super-herói em que o nome seja igual a Thor.
 13.	Atualize a quantidade de gatos em que o usuário com o registro de nom
 e ‘Thor’ possui. Atualize a quantidade de gatos de ‘0’ para ‘7’.
