@@ -13,21 +13,22 @@ function App() {
           <div className="container">
             
             <nav className="cabecalhoPrincipal-nav">
+              <section className="">
               <Link to='/'>Home</Link>
               <Link to='/categorias'>Categorias</Link>
               <Link to='/lancamentos'>Lançamentos</Link>
               <Link to='/login'>Login</Link>   
               <Link to='/cadastro'>Cadastrar</Link>
+              </section>
             </nav>
           </div>
         </header>
 
-        <section className="conteudoImagem">
+        <section className="conteudoFundo">
           <div>
               <h1>Quem Somos</h1>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, omnis ipsam. Eaque magnam, animi earum aspernatur adipisci facere quasi dolorem quisquam at aliquam quae delectus reprehenderit, exercitationem rem nobis quas?</p>
             </div>
-        </section>
 
         <main className="conteudoPrincipal">
 
@@ -53,26 +54,15 @@ function App() {
 
                   <li className="conteudoPrincipal-dados-link-Opiniões">
                   <h2>Pessoa 4</h2>
-                  <p>Lorem ipsum dolor sit amet consecteturadipisicing elit. Alias odio illum dolorem etsed voluptatum tempora modi maxime, dolorlaudantium natus recusandae similique qui esseprovident earum fugit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odio illum dolorem etsed voluptatum tempora modi maxime, dolorlaudantium natus recusandae similique qui esseprovident earum fugit.</p>
                  </li>
                </ul>
             </nav>
           </div>
         </section>
-
-        <section>
-          <div className="contact-section">
-            <div className="inner-width">
-              <h1>Entre em contato conosco</h1>
-              <input type="text" className="name" placeholder="Your Name"/>
-              <input type="text" className="email" placeholder="your email"/>
-              <textarea rows="1" placeholder="Mensagem" class="mensagem"></textarea>
-              <button>Enviar</button>
-            </div>
-          </div>
-        </section>
-        
         </main>
+        </section>
+
         <footer className="rodapePrincipal">
           <section className="rodapePrincipal">
             <div className="container">
