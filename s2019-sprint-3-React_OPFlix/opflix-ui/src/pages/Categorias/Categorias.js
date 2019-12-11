@@ -23,7 +23,7 @@ class Categorias extends Component{
     }
 
     listarCategoria = () =>{
-        fetch('http://localhost:5000/api/Categoria')
+        fetch('http://192.168.3.47:5000/api/Categoria')
             .then(response => response.json())
             .then(data => this.setState({lista: data}));
     }
@@ -31,7 +31,7 @@ class Categorias extends Component{
     cadastrarCategoria = (event) =>{
         event.preventDefault();
 
-        fetch('http://localhost:5000/api/Categoria',{
+        fetch('http://192.168.3.47:5000/api/Categoria',{
             method: "POST",
             body: JSON.stringify({ nome: this.state.nome }),
             headers: {

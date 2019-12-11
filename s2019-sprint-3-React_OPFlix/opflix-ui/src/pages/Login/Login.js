@@ -25,7 +25,7 @@ export default class Login extends Component {
         event.preventDefault();
         console.log(this.state)
 
-        Axios.post('http://localhost:5000/api/login', {
+        Axios.post('http://192.168.3.47:5000/api/login', {
             Email: this.state.email,
             Senha: this.state.senha
         })
@@ -64,7 +64,7 @@ export default class Login extends Component {
                             <h1>Login</h1>
                                 <input
                                     className="input__login"
-                                    placeholder="username"
+                                    placeholder="email"
                                     type="text"
                                     name="username"
                                     id="login__email"

@@ -17,7 +17,7 @@ class Lancamentos extends Component{
     }
 
     listarLancamentos = () =>{
-        fetch('http://localhost:5000/api/Lancamento')
+        fetch('http://192.168.3.47:5000/api/Lancamento')
             .then(response => response.json())
             .then(data => this.setState({lista: data}));
     }
@@ -25,7 +25,7 @@ class Lancamentos extends Component{
     cadastrarLancamentos = (event) =>{
         event.preventDefault();
 
-        fetch('http://localhost:5000/api/Lancamento',{
+        fetch('http://192.168.3.47:5000/api/Lancamento',{
             method: "POST",
             body: JSON.stringify({ nome: this.state.nome }),
             headers: {

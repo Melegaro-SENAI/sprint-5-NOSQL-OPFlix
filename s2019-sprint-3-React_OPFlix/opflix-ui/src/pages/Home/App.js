@@ -19,6 +19,7 @@ function App() {
               <Link to='/lancamentos'>Lançamentos</Link>
               <Link to='/login'>Login</Link>   
               <Link to='/cadastro'>Cadastrar</Link>
+              <Link to='/localizacao'>Localização</Link>
               </section>
             </nav>
           </div>
