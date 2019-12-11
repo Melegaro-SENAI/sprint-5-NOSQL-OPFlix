@@ -29,14 +29,14 @@ export class MapContainer extends Component {
     render() {
         return (
             <Map google={this.props.google} zoom={14} initialCenter={{
-                lat: ,
-                lng: ,
+                lat: -23.5370807,
+                lng: -46.6449982,
             }}>
                 {this.state.listalocalizacoes.map(x => {
                     return (
                         <Marker
-                            title={x.nomeLancamento}
-                            name={x.nomeLancamento}
+                            title={x.nome}
+                            name={x.nome}
                             position={{ lat: x.latitude, lng: x.longitude }} />
                     );
                 })}

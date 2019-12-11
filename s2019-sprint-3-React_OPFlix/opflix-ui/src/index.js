@@ -10,6 +10,7 @@ import NaoEncontrado from './pages/NaoEncontrado/NaoEncontrado';
 import Login from './pages/Login/Login';
 import Categorias from './pages/Categorias/Categorias';
 import Cadastro from './pages/Cadastro/Cadastro';
+import Localizacao from './pages/Localizacao/Localizacao';
 
 // routes
 import { Route, BrowserRouter, Switch, Redirect } from "react-router-dom";
@@ -39,6 +40,7 @@ const routing = (
             <Route path='/lancamentos' component={Lancamentos} />
             <Route path='/login' component={Login} />
             <Route path='/cadastro' component={Cadastro} />
+            <Route path='/localizacao' component={Localizacao} />
             <Route component={NaoEncontrado}/>
         </Switch>
     </BrowserRouter>
